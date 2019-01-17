@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Sarabun");
+.container, .container .header, .container .main, .container .main .browser, .container .main .dragDrop, .container .main .template, .container .main .pricing, .container .footer .footerLink {
+  display: flex;
+  justify-content: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 10px; }
+
+body {
+  background: #FFF; }
+
+button {
+  cursor: pointer; }
+
+.container {
+  width: 100%;
+  flex-wrap: wrap; }
+  .container .header {
+    flex-wrap: wrap;
+    width: 100%;
+    background: url(../img/home.jpg) no-repeat; }
+    .container .header .nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 6.7rem;
+      margin: 5rem 7%; }
+      .container .header .nav .menu {
+        display: flex;
+        align-items: center; }
+        .container .header .nav .menu ul {
+          display: flex;
+          flex-direction: row; }
+          .container .header .nav .menu ul li {
+            margin-left: 5rem; }
+            .container .header .nav .menu ul li a {
+              color: #FFF;
+              font-family: "Sarabun";
+              font-size: 1.2rem; }
+            .container .header .nav .menu ul li a:hover {
+              color: #5584ff; }
+            .container .header .nav .menu ul li .login {
+              padding: 1.5rem 4rem;
+              color: #5584ff;
+              border: 1px solid #5584ff;
+              border-radius: 50px; }
+            .container .header .nav .menu ul li .login:hover {
+              background: #5584ff;
+              color: #FFF; }
+    .container .header .home {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 73.5%;
+      text-align: center;
+      margin-top: 115px; }
+      .container .header .home h1 {
+        font-family: "Lato";
+        font-size: 4.3rem;
+        color: #FFF;
+        width: 100%;
+        margin-bottom: 20px; }
+      .container .header .home h3 {
+        font-family: "Sarabun";
+        font-size: 2.4rem;
+        color: #8492af;
+        width: 100%;
+        margin-bottom: 85px; }
+      .container .header .home button {
+        font-family: "Sarabun";
+        font-size: 1.5rem;
+        color: #FFF;
+        padding: 1.5rem 5.5rem;
+        background: #5584ff;
+        border: 1px solid #5584ff;
+        border-radius: 50px; }
+      .container .header .home button:hover {
+        background: #f50a5e;
+        border: 1px solid #f50a5e; }
+    .container .header .present {
+      margin-top: 85px; }
+  .container .main {
+    flex-wrap: wrap;
+    width: 100%; }
+    .container .main .icon {
+      display: flex;
+      justify-content: space-between;
+      width: 73.5%;
+      flex-wrap: nowrap;
+      margin-top: 135px; }
+      .container .main .icon .iconItem {
+        width: 32%;
+        text-align: center;
+        font-family: "Sarabun"; }
+        .container .main .icon .iconItem h4 {
+          margin-top: 60px;
+          font-size: 1.8rem;
+          color: #000; }
+        .container .main .icon .iconItem p {
+          margin-top: 3.4rem;
+          font-size: 1.2rem;
+          color: #8492af; }
+        .container .main .icon .iconItem button {
+          margin-top: 5.6rem;
+          font-size: 1.2rem;
+          padding: 1.8rem 8.7rem;
+          color: #000;
+          border: 1px solid #8492af;
+          border-radius: 50px;
+          background: transparent; }
+        .container .main .icon .iconItem button:hover {
+          color: #FFF;
+          background: #5584ff; }
+    .container .main .browser {
+      flex-wrap: nowrap;
+      width: 100%;
+      margin-top: 220px;
+      padding-left: 12.5%; }
+      .container .main .browser .browserText {
+        font-family: "Sarabun";
+        min-width: 65rem; }
+        .container .main .browser .browserText h4 {
+          font-size: 4.6rem;
+          color: #000;
+          margin-bottom: 5.7rem; }
+        .container .main .browser .browserText p {
+          font-size: 1.1rem;
+          color: #8492af;
+          margin-bottom: 5rem; }
+        .container .main .browser .browserText ul {
+          margin-top: 1rem; }
+          .container .main .browser .browserText ul li {
+            font-size: 1.8rem;
+            color: #0e1a35;
+            margin-bottom: 3.5rem; }
+      .container .main .browser .browserImg {
+        max-width: 1000px;
+        overflow: hidden; }
+    .container .main .dragDrop {
+      flex-wrap: nowrap;
+      width: 100%;
+      margin-top: 110px;
+      padding: 15.5rem 32rem 20rem 15rem;
+      background: url(../img/dragDropBg.jpg) no-repeat; }
+      .container .main .dragDrop .drop {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100rem; }
+        .container .main .dragDrop .drop .progres {
+          width: 40rem; }
+        .container .main .dragDrop .drop .completed {
+          width: 40rem; }
+          .container .main .dragDrop .drop .completed ul {
+            padding-top: 2rem; }
+        .container .main .dragDrop .drop h5 {
+          font-size: "Sarabun";
+          font-size: 2.4rem;
+          color: #FFF; }
+        .container .main .dragDrop .drop .dropTable {
+          display: flex;
+          flex-wrap: wrap;
+          width: 34rem;
+          border-spacing: 0 20px;
+          font-family: "Sarabun"; }
+          .container .main .dragDrop .drop .dropTable .small {
+            height: 1px;
+            background: transparent;
+            margin: 0; }
+          .container .main .dragDrop .drop .dropTable li {
+            display: flex;
+            background: #FFF;
+            max-height: 70px;
+            width: 100%;
+            margin: 1rem 0;
+            padding: 1rem 0; }
+            .container .main .dragDrop .drop .dropTable li p {
+              font-size: 1.8rem;
+              color: #FFF;
+              background: #5584ff;
+              padding: 0.8rem 1rem;
+              margin-left: 3rem;
+              border-radius: 50%; }
+            .container .main .dragDrop .drop .dropTable li h6 {
+              font-size: 1.4rem;
+              color: #000;
+              margin-left: 2.2rem; }
+              .container .main .dragDrop .drop .dropTable li h6 span {
+                font-size: 1rem;
+                color: #8492af; }
+              .container .main .dragDrop .drop .dropTable li h6 .completed {
+                color: #33be06; }
+            .container .main .dragDrop .drop .dropTable li i {
+              font-size: 2.8rem;
+              color: #8492af;
+              padding-right: 2rem;
+              padding-top: 0.5rem;
+              margin-left: auto; }
+          .container .main .dragDrop .drop .dropTable .wele:hover {
+            background: #8492af;
+            cursor: pointer; }
+      .container .main .dragDrop .text {
+        width: 50%;
+        font-family: "Sarabun";
+        color: #FFF;
+        padding-left: 14rem; }
+        .container .main .dragDrop .text h4 {
+          font-size: 4.6rem; }
+        .container .main .dragDrop .text p {
+          font-size: 1.4rem;
+          margin-top: 6rem;
+          color: #8492af; }
+        .container .main .dragDrop .text .arrows {
+          font-size: 3.4rem;
+          margin-top: 5.5rem; }
+          .container .main .dragDrop .text .arrows a {
+            color: #8492af; }
+          .container .main .dragDrop .text .arrows a:hover {
+            color: #FFF; }
+    .container .main .template {
+      flex-wrap: wrap;
+      width: 73.5%;
+      margin-top: 100px;
+      background: url(../img/templateBg.jpg) no-repeat;
+      background-position: bottom;
+      font-family: "Lato";
+      text-align: center; }
+      .container .main .template h3 {
+        font-size: 4.4rem;
+        color: #000;
+        margin-bottom: 6.4rem;
+        width: 100%; }
+      .container .main .template p {
+        font-size: 1.4rem;
+        color: #8492af;
+        margin-bottom: 13rem;
+        width: 100%; }
+      .container .main .template .templateItem {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        hight: 46rem; }
+        .container .main .template .templateItem h5 {
+          font-size: 1.8rem;
+          color: #000; }
+        .container .main .template .templateItem p {
+          font-size: 1.2rem;
+          color: #8492af; }
+        .container .main .template .templateItem img {
+          width: 60%; }
+        .container .main .template .templateItem .itemLeft {
+          height: 50rem;
+          text-align: left; }
+        .container .main .template .templateItem .itemRight {
+          display: flex;
+          align-items: flex-end;
+          height: 50rem;
+          text-align: right; }
+    .container .main .pricing {
+      flex-wrap: wrap;
+      width: 73.5%;
+      margin-top: 16rem;
+      font-family: "Sarabun"; }
+      .container .main .pricing h3 {
+        font-size: 4.6rem;
+        color: #000; }
+      .container .main .pricing .pricingItem {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 9rem; }
+        .container .main .pricing .pricingItem .pricingPrice {
+          width: 25%;
+          box-shadow: 0 0 50px rgba(167, 162, 162, 0.5);
+          text-align: center; }
+          .container .main .pricing .pricingItem .pricingPrice h5 {
+            font-size: 2rem;
+            color: #000;
+            margin-top: 3rem; }
+          .container .main .pricing .pricingItem .pricingPrice p {
+            font-size: 1.6rem;
+            color: #8492af;
+            margin-top: 2.5rem; }
+            .container .main .pricing .pricingItem .pricingPrice p i {
+              font-size: 3.6rem;
+              color: #000; }
+            .container .main .pricing .pricingItem .pricingPrice p span {
+              font-size: 5rem;
+              color: #000; }
+          .container .main .pricing .pricingItem .pricingPrice ul {
+            margin: 4.4rem 0;
+            color: #8492af; }
+            .container .main .pricing .pricingItem .pricingPrice ul li {
+              font-size: 1.4rem;
+              color: #8492af;
+              margin-bottom: 1.8rem; }
+              .container .main .pricing .pricingItem .pricingPrice ul li .fa-check-circle {
+                color: #5584ff;
+                font-size: 2.2rem; }
+              .container .main .pricing .pricingItem .pricingPrice ul li .fa-ban {
+                color: #f50a5e;
+                font-size: 2.2rem; }
+      .container .main .pricing .picingText {
+        font-size: 1.2rem;
+        color: #8492af;
+        margin-top: 11rem;
+        width: 100%;
+        text-align: center; }
+      .container .main .pricing .picingBtn {
+        font-size: 1.4rem;
+        color: #FFF;
+        margin-top: 7rem;
+        padding: 1.6rem 6.6rem;
+        background: #5584ff;
+        border: 1px solid #5584ff;
+        border-radius: 50px; }
+      .container .main .pricing .picingBtn:hover {
+        background: #f50a5e;
+        border: 1px solid #f50a5e; }
+  .container .footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 10.4rem;
+    padding: 6.6rem 13.2%;
+    background: #0e1a35;
+    font-family: "Lato";
+    font-size: 1.4rem;
+    color: #8492af; }
+    .container .footer .footerLink {
+      flex-wrap: nowrap; }
+      .container .footer .footerLink .footerNav ul {
+        display: flex;
+        flex-direction: row; }
+        .container .footer .footerLink .footerNav ul a {
+          color: #8492af;
+          margin-right: 5rem; }
+        .container .footer .footerLink .footerNav ul a:hover {
+          color: #FFF; }
+      .container .footer .footerLink .footerSocial a {
+        color: #8492af;
+        margin-right: 1.8rem; }
+
+/*# sourceMappingURL=style.css.map */

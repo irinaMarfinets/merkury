@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Sarabun')
+
+$COLOR__WHITE: #FFF
+$COLOR__BLUE: #5584ff
+$COLOR__LIGHT__GRAY: #8492af
+$COLOR__LIGHT__BLUE: #5584ff
+$COLOR__BLACK: #000
+$COLOR__RED: #f50a5e
+$COLOR__BLUE: #0e1a35
+$COLOR__GREEN: #33be06
+
+$FONT__1: 'Sarabun'
+$FONT__2: 'Lato'
+
+$width__main: 73.5%
+
+%flex
+	display: flex
+	justify-content: center
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+ul, li
+	list-style: none
+	margin: 0
+	padding: 0
+
+a
+	text-decoration: none
+	margin: 0
+	padding: 0
+
+html
+	font-size: 10px
+
+body
+	background: $COLOR__WHITE
+
+button
+	cursor: pointer
+
+.container
+	@extend %flex
+	width: 100%
+	flex-wrap: wrap
+
+	.header
+		@extend %flex
+		flex-wrap: wrap
+		width: 100%
+		background: url(../img/home.jpg) no-repeat
+
+		.nav
+			display: flex
+			justify-content: space-between
+			width: 100%
+			height: 6.7rem
+			margin: 5rem 7%
+
+			.menu
+				display: flex
+				align-items: center
+
+				ul
+					display: flex
+					flex-direction: row
+
+					li
+						margin-left: 5rem
+
+						a
+							color: $COLOR__WHITE
+							font-family: $FONT__1
+							font-size: 1.2rem
+
+						a:hover
+							color: $COLOR__LIGHT__BLUE
+
+						.login
+							padding: 1.5rem 4rem
+							color: $COLOR__LIGHT__BLUE
+							border: 1px solid $COLOR__LIGHT__BLUE
+							border-radius: 50px
+
+						.login:hover
+							background: $COLOR__LIGHT__BLUE
+							color: $COLOR__WHITE
+
+
+
+		.home
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			width: $width__main
+			text-align: center
+			margin-top: 115px
+
+			h1
+				font-family: $FONT__2
+				font-size: 4.3rem
+				color: $COLOR__WHITE
+				width: 100%
+				margin-bottom: 20px
+			h3
+				font-family: $FONT__1
+				font-size: 2.4rem
+				color: $COLOR__LIGHT__GRAY
+				width: 100%
+				margin-bottom: 85px
+
+
+			button
+				font-family: $FONT__1
+				font-size: 1.5rem
+				color: $COLOR__WHITE
+				padding: 1.5rem 5.5rem
+				background: $COLOR__LIGHT__BLUE
+				border: 1px solid $COLOR__LIGHT__BLUE
+				border-radius: 50px
+
+			button:hover
+				background: $COLOR__RED
+				border: 1px solid $COLOR__RED
+
+		.present
+			margin-top: 85px
+
+	.main
+		@extend %flex
+		flex-wrap: wrap
+		width: 100%
+
+		.icon
+			display: flex
+			justify-content: space-between
+			width: $width__main
+			flex-wrap: nowrap
+			margin-top: 135px
+
+			.iconItem
+				width: 32%
+				text-align: center
+				font-family: $FONT__1
+
+				h4
+					margin-top: 60px
+					font-size: 1.8rem
+					color: $COLOR__BLACK
+				p
+					margin-top: 3.4rem
+					font-size: 1.2rem
+					color: $COLOR__LIGHT__GRAY
+				
+				button
+					margin-top: 5.6rem
+					font-size: 1.2rem
+					padding: 1.8rem 8.7rem
+					color: $COLOR__BLACK
+					border: 1px solid $COLOR__LIGHT__GRAY
+					border-radius: 50px
+					background: transparent
+
+				button:hover
+					color: $COLOR__WHITE
+					background: $COLOR__LIGHT__BLUE
+
+		.browser
+			@extend %flex
+			flex-wrap: nowrap
+			width: 100%
+			margin-top: 220px
+			padding-left: 12.5%
+
+			.browserText
+				font-family: $FONT__1
+				min-width: 65rem
+
+				h4
+					font-size: 4.6rem
+					color: $COLOR__BLACK
+					margin-bottom: 5.7rem
+
+				p
+					font-size: 1.1rem
+					color: $COLOR__LIGHT__GRAY
+					margin-bottom: 5rem
+
+				ul
+					margin-top: 1rem
+
+					li
+						font-size: 1.8rem
+						color: $COLOR__BLUE
+						margin-bottom: 3.5rem
+
+			.browserImg
+				max-width: 1000px
+				overflow: hidden
+
+		.dragDrop
+			@extend %flex
+			flex-wrap: nowrap
+			width: 100%
+			margin-top: 110px
+			padding: 15.5rem 32rem 20rem 15rem
+			background: url(../img/dragDropBg.jpg) no-repeat
+
+			.drop
+				display: flex
+				justify-content: space-between
+				flex-wrap: nowrap
+				width: 100rem
+
+				.progres
+					width: 40rem
+
+				.completed
+					width: 40rem
+
+					ul
+						padding-top: 2rem
+				
+				h5
+					font-size: $FONT__1
+					font-size: 2.4rem
+					color: $COLOR__WHITE
+
+				.dropTable
+					display: flex
+					flex-wrap: wrap
+					width: 34rem
+					border-spacing: 0 20px
+					font-family: $FONT__1
+
+					.small
+						height: 1px
+						background: transparent
+						margin: 0
+
+					li
+						display: flex
+						background: $COLOR__WHITE
+						max-height: 70px
+						width: 100%
+						margin: 1rem 0
+						padding: 1rem 0
+
+						p
+							font-size: 1.8rem
+							color: $COLOR__WHITE
+							background: $COLOR__LIGHT__BLUE
+							padding: .8rem 1rem
+							margin-left: 3rem
+							border-radius: 50%
+
+						h6
+							font-size: 1.4rem
+							color: $COLOR__BLACK
+							margin-left: 2.2rem
+
+							span
+								font-size: 1rem
+								color: $COLOR__LIGHT__GRAY
+
+							.completed
+								color: $COLOR__GREEN
+
+						i
+							font-size: 2.8rem
+							color: $COLOR__LIGHT__GRAY
+							padding-right: 2rem
+							padding-top: .5rem
+							margin-left: auto
+
+					.wele:hover
+						background: $COLOR__LIGHT__GRAY
+						cursor: pointer
+
+			.text
+				width: 50%
+				font-family: $FONT__1
+				color: $COLOR__WHITE
+				padding-left: 14rem
+
+				h4
+					font-size: 4.6rem
+
+				p
+					font-size: 1.4rem
+					margin-top: 6rem
+					color: $COLOR__LIGHT__GRAY
+
+				.arrows
+					font-size: 3.4rem
+					margin-top: 5.5rem
+
+					a
+						color: $COLOR__LIGHT__GRAY
+
+					a:hover
+						color: $COLOR__WHITE
+
+		.template
+			@extend %flex
+			flex-wrap: wrap
+			width: $width__main
+			margin-top: 100px
+			background: url(../img/templateBg.jpg) no-repeat
+			background-position: bottom
+			font-family: $FONT__2
+			text-align: center
+
+			h3
+				font-size: 4.4rem
+				color: $COLOR__BLACK
+				margin-bottom: 6.4rem
+				width: 100%
+
+			p
+				font-size: 1.4rem
+				color: $COLOR__LIGHT__GRAY
+				margin-bottom: 13rem
+				width: 100%
+
+			.templateItem
+				display: flex
+				justify-content: center
+				flex-wrap: nowrap
+				hight: 46rem
+				
+				h5
+					font-size: 1.8rem
+					color: $COLOR__BLACK
+
+				p
+					font-size: 1.2rem
+					color: $COLOR__LIGHT__GRAY
+				img
+					width: 60%
+
+				.itemLeft
+					height: 50rem
+					text-align: left
+
+				.itemRight
+					display: flex
+					align-items: flex-end
+					height: 50rem
+					text-align: right
+
+		.pricing
+			@extend %flex
+			flex-wrap: wrap
+			width: $width__main
+			margin-top: 16rem
+			font-family: $FONT__1
+
+			h3
+				font-size: 4.6rem
+				color: $COLOR__BLACK
+
+			.pricingItem
+				display: flex
+				justify-content: space-between
+				width: 100%
+				margin-top: 9rem
+
+				.pricingPrice
+					width: 25%
+					box-shadow: 0 0 50px rgba(167, 162, 162, .5)
+					text-align: center
+
+					h5
+						font-size: 2rem
+						color: $COLOR__BLACK
+						margin-top: 3rem
+
+					p
+						font-size: 1.6rem
+						color: $COLOR__LIGHT__GRAY
+						margin-top: 2.5rem
+
+						i
+							font-size: 3.6rem
+							color: $COLOR__BLACK
+						span
+							font-size: 5rem
+							color: $COLOR__BLACK
+
+					ul
+						margin: 4.4rem 0
+						color: $COLOR__LIGHT__GRAY
+
+						li
+							font-size: 1.4rem
+							color: $COLOR__LIGHT__GRAY
+							margin-bottom: 1.8rem
+
+							.fa-check-circle
+								color: $COLOR__LIGHT__BLUE
+								font-size: 2.2rem
+
+							.fa-ban
+								color: $COLOR__RED
+								font-size: 2.2rem
+
+			.picingText
+				font-size: 1.2rem
+				color: $COLOR__LIGHT__GRAY
+				margin-top: 11rem
+				width: 100%
+				text-align: center
+
+			.picingBtn
+				font-size: 1.4rem
+				color: $COLOR__WHITE
+				margin-top: 7rem
+				padding: 1.6rem 6.6rem
+				background: $COLOR__LIGHT__BLUE
+				border: 1px solid $COLOR__LIGHT__BLUE
+				border-radius: 50px
+
+			.picingBtn:hover
+				background: $COLOR__RED
+				border: 1px solid $COLOR__RED
+
+	.footer
+		display: flex
+		justify-content: space-between
+		flex-wrap: nowrap
+		width: 100%
+		margin-top: 10.4rem
+		padding: 6.6rem 13.2%
+		background: $COLOR__BLUE
+		font-family: $FONT__2
+		font-size: 1.4rem
+		color: $COLOR__LIGHT__GRAY
+			
+		.footerLink
+			@extend %flex
+			flex-wrap: nowrap
+
+			.footerNav
+				ul
+					display: flex
+					flex-direction: row
+
+					a
+						color: $COLOR__LIGHT__GRAY
+						margin-right: 5rem
+
+					a:hover
+						color: $COLOR__WHITE
+
+			.footerSocial
+				a
+					color: $COLOR__LIGHT__GRAY
+					margin-right: 1.8rem
+
+

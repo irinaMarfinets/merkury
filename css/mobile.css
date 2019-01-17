@@ -1,0 +1,126 @@
+@media screen and (max-width: 720px) {
+  html {
+    font-size: 8px; }
+    html .container .header .nav {
+      flex-wrap: wrap;
+      height: auto; }
+      html .container .header .nav .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%; }
+      html .container .header .nav .menu {
+        justify-content: center;
+        width: 100%;
+        height: auto; }
+        html .container .header .nav .menu ul {
+          flex-direction: column;
+          margin: 2rem 0;
+          text-align: center;
+          height: auto; }
+          html .container .header .nav .menu ul li {
+            margin: 1.5rem 0; }
+    html .container .header .home {
+      margin-top: 5rem;
+      width: 100%; }
+      html .container .header .home h1 {
+        font-size: 3rem; }
+      html .container .header .home h3 {
+        margin-bottom: 4rem; }
+    html .container .header .present {
+      width: 100%;
+      margin: 50px auto 50px 5%; }
+      html .container .header .present img {
+        width: 90%;
+        height: auto; }
+    html .container .main .icon {
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 50px; }
+      html .container .main .icon .iconItem {
+        width: 51%;
+        margin-bottom: 50px; }
+        html .container .main .icon .iconItem h4 {
+          margin-top: 20px; }
+        html .container .main .icon .iconItem button {
+          margin-top: 30px; }
+    html .container .main .browser {
+      margin-top: 50px;
+      text-align: center;
+      width: 100%;
+      padding-left: 0; }
+      html .container .main .browser .browserText {
+        min-width: 100%; }
+        html .container .main .browser .browserText h4 {
+          font-size: 3rem;
+          margin-bottom: 20px; }
+        html .container .main .browser .browserText p {
+          margin-bottom: 20px; }
+      html .container .main .browser .browserImg {
+        display: none; }
+    html .container .main .dragDrop {
+      flex-wrap: wrap;
+      margin-top: 50px;
+      flex-direction: column-reverse;
+      padding: 0 5% 50px 5%; }
+      html .container .main .dragDrop .drop {
+        display: none; }
+      html .container .main .dragDrop .text {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 20px;
+        text-align: center; }
+        html .container .main .dragDrop .text p {
+          margin-top: 20px; }
+    html .container .main .template {
+      width: 100%;
+      margin-top: 80px;
+      padding: 0 10%;
+      background: none; }
+      html .container .main .template p {
+        margin-bottom: 5rem; }
+      html .container .main .template .templateItem {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 40rem; }
+        html .container .main .template .templateItem img {
+          width: 60%; }
+        html .container .main .template .templateItem .itemLeft {
+          height: 20rem; }
+        html .container .main .template .templateItem .itemRight {
+          height: 20rem; }
+    html .container .main .pricing {
+      width: 100%;
+      margin-top: 10rem;
+      padding: 0 10%; }
+      html .container .main .pricing h3 {
+        font-size: 3rem; }
+      html .container .main .pricing .pricingItem {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 3rem; }
+        html .container .main .pricing .pricingItem .pricingPrice {
+          width: 80%;
+          margin-top: 20px; }
+      html .container .main .pricing .picingText {
+        margin-top: 5rem; }
+      html .container .main .pricing .picingBtn {
+        margin-top: 4rem; }
+    html .container .footer {
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column-reverse; }
+      html .container .footer .footerText {
+        margin-top: 20px;
+        text-align: center; }
+      html .container .footer .footerLink {
+        flex-wrap: wrap; }
+        html .container .footer .footerLink .footerNav {
+          display: flex;
+          justify-content: center; }
+          html .container .footer .footerLink .footerNav a {
+            margin-right: 20px; }
+        html .container .footer .footerLink .footerSocial {
+          margin-top: 30px; } }
+
+/*# sourceMappingURL=mobile.css.map */
